@@ -1,3 +1,4 @@
+/* Carrusel de imagenes */
 *{
     margin: 0;
     padding: 0;
@@ -78,4 +79,22 @@ body {
     .texto p {
         font-size: 15px;
     }
+}
+/*Otra cosa de css (finaliza el carrusel img) */
+.h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text-white{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:none ;
+}
+body{
+    background-color:#181a1b;
+}
+
+.mi-encabezado {
+  background-color: #1e1e2f;
+}
+.boton-derecha{
+ text-align: right;
 }
