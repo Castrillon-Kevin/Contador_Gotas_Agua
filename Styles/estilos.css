@@ -83,6 +83,7 @@ body {
 /*Otra cosa de css (finaliza el carrusel img) */
 .h4 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:none ;
 }
 .text-white{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -98,3 +99,7 @@ body{
 .boton-derecha{
  text-align: right;
 }
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FFFFFF;
+}   
