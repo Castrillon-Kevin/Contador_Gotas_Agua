@@ -85,7 +85,7 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:none ;
 }
-.text-white{
+.text-white, .btn{ 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:none ;
 }
