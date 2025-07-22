@@ -19,8 +19,8 @@ function iniciarSesion() {
 
   if (usuario === dataDB.usuario && clave === dataDB.clave) {
     if (dataDB.rol === "admin") {
-      localStorage.setItem("rol", "admin"); // Guardamos el rol para usarlo en administracion.html
-      window.location.href = "administracion.html"; // Redirige
+      localStorage.setItem("rol", "admin"); 
+      window.location.href = "administracion.html"; 
     } else {
       alert("No tienes permisos para acceder a esta sección.");
     }
