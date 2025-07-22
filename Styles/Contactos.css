@@ -1,5 +1,6 @@
 .h4 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
 }
 .text-white{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -10,3 +11,60 @@
 body{
     background-color:#181a1b;
 }
+.opiniones {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #ffff;
+}
+/* Apartado de opiniones*/  
+.formulario-opinion {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario-opinion label {
+  font-weight: bold;
+  padding: 20px 0px 0px;
+
+}
+
+.formulario-opinion input,
+.formulario-opinion textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.formulario-opinion button {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario-opinion button:hover {
+  background-color: #27273d;
+}
+
+
+/*Aca finaliza*/
+
+
