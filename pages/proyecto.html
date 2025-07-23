@@ -1,80 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contador de Gotas de Agua</title>
-
-  <!-- Bootstrap CSS (CDN) -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-  />
-
-  <!-- Tu archivo CSS personalizado (opcional) -->
-  <link rel="stylesheet" href="/Styles/proyecto.css" />
+  <meta charset="UTF-8">
+  <title>Drop by Drop</title>
+  <link rel="stylesheet" href="/Styles/proyecto.css">
 </head>
 <body>
- <!-- Encabezado / Navegación -->
-  <header class="mi-encabezado text-white p-3">
 
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="/index.html" Class ="h4">Drop by Drop</a>
-      <nav class="boton-derecha">
-        <a href="/index.html" class="text-white me-3">Inicio</a>
-        <a href="/pages/proyecto.html" class="text-white me-3">Proyecto</a>
-        <a href="/pages/Contactos.html" class="text-white me-3">Contacto</a>
-        <a href="/pages/Iniciar-sesion.html" class="btn btn-primary ">Iniciar sesión</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Drop by Drop</h1>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/pages/proyecto.html">Proyecto</a>
+      <a href="/pages/Contactos.html">Contacto</a>
+      <a href="/pages/Iniciar-sesion.html" class="btn">Iniciar sesión</a>
+    </nav>
   </header>
-  <h1 class= "titulo">¿QUIENES SOMOS? </h1>
 
-  <p class ="quienes-somos">
-    Somos un grupo de estudiantes comprometidos con el cuidado del medio ambiente y el uso 
-    responsable del agua. A través de nuestro proyecto <strong>"Drop by Drop"</strong>, 
-    buscamos crear conciencia sobre el ahorro de agua, aportando con ideas que contribuyan con el 
-    cuidado de esta misma, ya que el agua es un recurso que todos necesitamos y muy pocos cuidan.
-  </p>
+  <section class="hero" id="inicio">
+    <h2>¿QUIÉNES SOMOS?</h2>
+    <p>
+      Somos un grupo de estudiantes comprometidos con el cuidado del medio ambiente y el uso responsable del agua.
+      A través de nuestro proyecto <strong>"Drop by Drop"</strong>, buscamos crear conciencia sobre el ahorro de agua,
+      aportando con ideas que contribuyan con el cuidado de esta misma, ya que el agua es un recurso que todos necesitamos y muy pocos cuidan.
+    </p>
+  </section>
 
-  <div class="contenedor-secciones">
-  <div class="seccion">
-    <h2 class="mision-titulo">Misión</h2>
-    <p>Nuestra mision es concientizar a las personas sobre la importancia del ahorro de agua, 
-      utilizando una pagina web que permite brindar informacion sobre las gotas de agua que se consume en diferentes 
-      hambitos escolares. Buscamos que cada usuario entienda cuanto se gasta y como puede reducir su consumo diaro con 
-      simples acciones, con esta pagina vamos a promover el uso responsable del agua tanto en los hogares como en los colegios. Para 
-      finalizar queremos aportar a la protección del medio ambiende desde este espacio. Y ten encuenta que cada gota cuenta.</p>
-  </div>
-  <div class="seccion">
-    <h2 class="vision-titulo">Visión</h2>
-    <p>Queremos ser una pagina reconocida por su impacto en el ahorro del agua y en la educacion ambiental, nuestra visión
-      es llegar a estudiantes, familias y empresas motivando el cambio de habitos a travez de este espacio. Tambien queremos motivar
-      a más jóvenes a crear proyectos que ayuden a proteger nuestro planeta, gota a gota.</p>
-  </div>
-  <div class="seccion">
-    <h2 class="politica-titulo">Política</h2>
-    <p>Nuestra pagina Web esta diseñada para ser clara, educativa y funcional. nos 
-      aseguramos de que cada usuario puedar entender el consumo del agua de forma sencilla, que estudiantes 
-      y adultos puedan entender la pagina sin dificultad, ademas promover el aprendizaje y la conciencia 
-      ambiental.</p>
-  </div>
-</div>
+  <section class="grid" id="proyecto">
+    <div class="card">
+      <h3 class ="titulo">Misión</h3>
+      <p>
+        Nuestra mision es concientizar a las personas sobre la importancia del ahorro de agua, 
+        utilizando una pagina web que permite brindar informacion sobre las gotas de agua que se consume en diferentes 
+        hambitos escolares. Buscamos que cada usuario entienda cuanto se gasta y como puede reducir su consumo diaro con 
+        simples acciones, con esta pagina vamos a promover el uso responsable del agua tanto en los hogares como en los colegios. 
+        Para finalizar queremos aportar a la protección del medio ambiende desde este espacio. Y ten encuenta que cada gota cuenta.
+      </p>
+    </div>
+    <div class="card">
+      <h3 class = "titulo">Visión</h3>
+      <p>
+        Queremos ser una pagina reconocida por su impacto en el ahorro del agua y en la educacion ambiental, nuestra visión
+        es llegar a estudiantes, familias y empresas motivando el cambio de habitos a travez de este espacio. Tambien queremos motivar
+        a más jóvenes a crear proyectos que ayuden a proteger nuestro planeta, gota a gota
+      </p>
+    </div>
+    <div class="card">
+      <h3 class ="titulo">Política</h3>
+      <p>
+        Nuestra pagina Web esta diseñada para ser clara, educativa y funcional. Nos 
+        aseguramos de que cada usuario pueda entender el consumo del agua de forma sencilla, que estudiantes 
+        y adultos puedan entender la pagina sin dificultad, además promover el aprendizaje y la conciencia 
+        ambiental.
+      </p>
+    </div>
+  </section>
 
-  
-
-  <!-- Pie de página -->
-  <footer class="bg-dark text-white text-center p-3">
-    <p>&copy; 2025 Drop by Drop. Todos los derechos reservados.</p>
+  <footer>
+    © 2025 Drop by Drop — Todos los derechos reservados.
   </footer>
-
-  <!-- Bootstrap JS y dependencias (CDN) -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-  </script>
-
-  <!-- Tu archivo JavaScript personalizado -->
-  <script src="main.js"></script>
 
 </body>
 </html>
