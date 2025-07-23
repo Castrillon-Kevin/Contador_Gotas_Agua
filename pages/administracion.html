@@ -11,12 +11,12 @@
 <body>
 
 <header>
-    <a class ="titulo" href ="/index.html">Drop by Drop</a>
+    <a class="titulo" href="/index.html">Drop by Drop</a>
     <nav>
         <a href="/index.html">Inicio</a>
         <a href="/pages/proyecto.html">Proyecto</a>
         <a href="/pages/Contactos.html">Contacto</a>
-        <a href="/pages/Iniciar-sesion.html" class="btn btn-primary ">Iniciar sesión</a>
+        <a href="/pages/Iniciar-sesion.html" class="btn">Iniciar sesión</a>
     </nav>
 </header>
 
@@ -24,46 +24,43 @@
     <h2>Administración de Opiniones</h2>
 
     <div class="opinion">
-        <div class="icon"><i class="fas fa-comment-dots"></i></div>
-        <div class="user-info">
-            <strong>Usuario:</strong> Juan Pérez <br>
-            <strong>Correo:</strong> juanperez@gmail.com
-        </div>
-        <div class="opinion-text">
-            "Me gustó mucho la página, es clara y concisa. ¡Buen trabajo!"
-        </div>
-        <div class="estado">
-            <label for="estado1">Estado:</label>
-            <select id="estado1">
-                <option>Recibido</option>
-                <option>En revisión</option>
-                <option>Respondido</option>
-                <option>Archivado</option>
-            </select>
-        </div>
+        <p><span class="azul">Usuario:</span> Juan Pérez<br>
+        <span class="azul">Correo:</span> juanperez@gmail.com</p>
+        <p class="mensaje"><em>"Me gustó mucho la página, es clara y concisa. ¡Buen trabajo!"</em></p>
+        <label for="estado1">Estado:</label>
+        <select id="estado1">
+            <option>Recibido</option>
+            <option>En revisión</option>
+            <option>Respondido</option>
+            <option>Archivado</option>
+        </select>
+        <div class="respuesta-admin">
+    <textarea placeholder="Escribe una respuesta..." class="input-respuesta"></textarea>
+    <button class="btn-responder">Responder</button>
+    <div class="respuesta-mostrada"></div>
+</div>
+
     </div>
 
     <div class="opinion">
-        <div class="icon"><i class="fas fa-comment-dots"></i></div>
-        <div class="user-info">
-            <strong>Usuario:</strong> María Gómez <br>
-            <strong>Correo:</strong> mariagomez@hotmail.com
-        </div>
-        <div class="opinion-text">
-            "Creo que podrían mejorar la sección de contacto, pero en general está muy bien."
-        </div>
-        <div class="estado">
-            <label for="estado2">Estado:</label>
-            <select id="estado2">
-                <option>Recibido</option>
-                <option>En revisión</option>
-                <option>Respondido</option>
-                <option>Archivado</option>
-            </select>
-        </div>
-    </div>
-
+        <p><span class="azul">Usuario:</span> María Gómez<br>
+        <span class="azul">Correo:</span> mariagomez@hotmail.com</p>
+        <p class="mensaje"><em>"Creo que podrían mejorar la sección de contacto, pero en general está muy bien."</em></p>
+        <label for="estado2">Estado:</label>
+        <select id="estado2">
+            <option>Recibido</option>
+            <option>En revisión</option>
+            <option>Respondido</option>
+            <option>Archivado</option>
+        </select>
+        <div class="respuesta-admin">
+    <textarea placeholder="Escribe una respuesta..." class="input-respuesta"></textarea>
+    <button class="btn-responder">Responder</button>
+    <div class="respuesta-mostrada"></div>
 </div>
 
+    </div>
+</div>
+<script src="/javascript/administracion.js"></script>
 </body>
 </html>
