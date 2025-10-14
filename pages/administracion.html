@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Opiniones</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Styles/administracion.css">
 </head>
 <body>
@@ -24,19 +22,25 @@
 <div class="main-container">
     <h2>Administración de Opiniones</h2>
 
-    <div class="opinion">
-        <p><span class="azul">Usuario:</span> Juan Pérez<br>
-        <span class="azul">Correo:</span> juanperez@gmail.com</p>
-        <p class="mensaje"><em>"Me gustó mucho la página, es clara y concisa. ¡Buen trabajo!"</em></p>
-    </div>
+    <h2>Panel de Administración de Reseñas</h2>
 
-    <div class="opinion">
-        <p><span class="azul">Usuario:</span> María Gómez<br>
-        <span class="azul">Correo:</span> mariagomez@hotmail.com</p>
-        <p class="mensaje"><em>"Creo que podrían mejorar la sección de contacto, pero en general está muy bien."</em></p>
-    </div>
+    <table id="tabla-reviews">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Contenido</th>
+                <th>Visible</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se cargan dinámicamente -->
+        </tbody>
+    </table>
+
 </div>
 
 </body>
 </html>
-```
+
