@@ -1,30 +1,38 @@
-  const dataDB = {
-  usuario: "kevincastrillon777@gmail.com",
-  clave: "1234",
-  rol: "admin"
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", (e) => {
+document.getElementById("sesion-form").addEventListener("submit", (e) => {
     e.preventDefault(); 
     iniciarSesion();
   });
-});
 
-function iniciarSesion() {
-  const usuario = document.getElementById("usuario").value;
-  const clave = document.getElementById("clave").value;
 
-  if (usuario === dataDB.usuario && clave === dataDB.clave) {
-    if (dataDB.rol === "admin") {
-      sessionStorage.setItem("rol", "admin"); 
-      window.location.href = "administracion.html"; 
+async function iniciarSesion() 
+{
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const mensaje = document.getElementById("mensaje");
+  console.log('hola');
+  
+  try {
+    const res = await fetch("http://localhost/Contador_Gotas_Agua/backend/login.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password })
+    });
+
+    const data = await res.json();
+
+
+    console.log('asd', data);
+    mensaje.innerText = data.message;
+    if (data.success) {
+      console.log(data);
+      window.location.href = "/pages/administracion.html";
+      sessionStorage.setItem("rol", data.rol);
     } else {
-      alert("No tienes permisos para acceder a esta sección.");
+      // window.location.href = "/index.html";
+
+      
     }
-  } else {
-    alert("Correo o contraseña incorrectos.");
+  } catch (error) {
+
   }
-}
+};

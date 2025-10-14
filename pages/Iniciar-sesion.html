@@ -26,16 +26,17 @@
   <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card p-4 bg-secondary" style="width: 100%; max-width: 400px;">
       <h2 class="text-center mb-4">Iniciar Sesión</h2>
-      <form>
+      <form id="sesion-form">
         <div class="mb-3">
           <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="usuario" placeholder="usuario@correo.com" required />
+          <input type="email" class="form-control" id="email" placeholder="usuario@correo.com" required />
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="clave" placeholder="••••••••" required />
+          <input type="password" class="form-control" id="password" placeholder="••••••••" required />
         </div>
         <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        <p id="mensaje"></p>
       </form>
     </div>
   </div>
