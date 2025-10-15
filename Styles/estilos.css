@@ -136,14 +136,16 @@ a:hover {
 
 .reviews-title {
   font-size: 2rem;
-  color: #1a3d2f;
+  color: #ffffff;
   margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .reviews-subtitle {
-  color: #5a7a6a;
+  color: #ffffff;
   font-size: 1rem;
   margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .reviews-list {
@@ -216,4 +218,5 @@ a:hover {
     height: 40px;
   }
 }
+
 

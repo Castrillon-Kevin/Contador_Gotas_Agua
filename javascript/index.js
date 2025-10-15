@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       tarjeta.innerHTML = `
         <div class="review-header">
-          <img src="img/user-default.png" alt="Usuario" class="review-avatar">
+          <img src="/pages/Imagenes/perfil-default.jpg" alt="Usuario" class="review-avatar">
           <div class="review-info">
             <h3 class="review-name">${r.usuario || "Anónimo"}</h3>
           </div>
