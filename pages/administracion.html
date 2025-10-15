@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Opiniones</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Styles/administracion.css">
 </head>
 <body>
@@ -23,45 +22,23 @@
 <div class="main-container">
     <h2>Administración de Opiniones</h2>
 
-    <div class="opinion">
-        <p><span class="azul">Usuario:</span> Juan Pérez<br>
-        <span class="azul">Correo:</span> juanperez@gmail.com</p>
-        <p class="mensaje"><em>"Me gustó mucho la página, es clara y concisa. ¡Buen trabajo!"</em></p>
-        <label for="estado1">Estado:</label>
-        <select id="estado1">
-            <option>Recibido</option>
-            <option>En revisión</option>
-            <option>Respondido</option>
-            <option>Archivado</option>
-        </select>
-        <div class="respuesta-admin">
-    <textarea placeholder="Escribe una respuesta..." class="input-respuesta"></textarea>
-    <button class="btn-responder">Responder</button>
-    <div class="respuesta-mostrada"></div>
-</div>
+    <h2>Panel de Administración de Reseñas</h2>
 
-    </div>
+    <table id="tabla-reviews">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Contenido</th>
+                <th>Visible</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se cargan dinámicamente -->
+        </tbody>
+    </table>
 
-    <div class="opinion">
-        <p><span class="azul">Usuario:</span> María Gómez<br>
-        <span class="azul">Correo:</span> mariagomez@hotmail.com</p>
-        <p class="mensaje"><em>"Creo que podrían mejorar la sección de contacto, pero en general está muy bien."</em></p>
-        <label for="estado2">Estado:</label>
-        <select id="estado2">
-            <option>Recibido</option>
-            <option>En revisión</option>
-            <option>Respondido</option>
-            <option>Archivado</option>
-        </select>
-        <div class="respuesta-admin">
-    <textarea placeholder="Escribe una respuesta..." class="input-respuesta"></textarea>
-    <button class="btn-responder">Responder</button>
-    <div class="respuesta-mostrada"></div>
-</div>
-<script src ="/javascript/administracion.js"></script>
-
-
-    </div>
 </div>
 <script src="/javascript/administracion.js"></script>
 </body>
