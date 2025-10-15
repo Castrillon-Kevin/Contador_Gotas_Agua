@@ -5,46 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drop by Drop</title>
 
- 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
   <link rel="stylesheet" href="/Styles/estilos.css" />
+
+  <style>
+    /* Estilos para los botones de redes sociales */
+    .social-btn {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 18px;
+      margin: 0 5px;
+      color: #fff;
+    }
+    .social-btn.instagram { background: #E1306C; }
+    .social-btn.facebook { background: #1877F2; }
+    .social-btn.x { background: #000; }
+    .social-btn:hover { opacity: 0.8; }
+  </style>
 </head>
 <body>
 
-  <header class="text-white p-3">
+  <!-- HEADER -->
+  <header class="text-white p-3 bg-primary">
     <div class="container d-flex justify-content-between align-items-center">
       <h4 class="titulo">💧 Drop by Drop</h4>
       <nav>
-        <a href="/pages/proyecto.html" class="sobre">Sobre</a>
-        <a href="#contacto" class="contacto">Contactanos</a>
-        <a href="/pages/Iniciar-sesion.html" class="iniciar-sesion">Iniciar session</a>
+        <a href="/pages/proyecto.html" class="sobre text-white">Sobre</a>
+        <a href="#contacto" class="contacto text-white">Contáctanos</a>
+        <a href="/pages/Iniciar-sesion.html" class="iniciar-sesion text-white">Iniciar sesión</a>
       </nav>
     </div>
   </header>
 
-  <!-- CARRUSEL DE IMÁGENES -->
+  <!-- CARRUSEL -->
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/pages/Imagenes/imagenes_agua/carrucel 1.jpg" class="d-block w-100" alt="Vaso con agua">
-        <div class="carousel-caption d-none d-md-block">
-        </div>
       </div>
       <div class="carousel-item">
         <img src="/pages/Imagenes/imagenes_agua/carrucel 2.jpg" class="d-block w-100" alt="Naturaleza">
-        <div class="carousel-caption d-none d-md-block">
-        </div>
       </div>
       <div class="carousel-item">
         <img src="/pages/Imagenes/imagenes_agua/carrucel 3.jpg" class="d-block w-100" alt="Naturaleza">
-        <div class="carousel-caption d-none d-md-block">
-        </div>
       </div>
       <div class="carousel-item">
         <img src="/pages/Imagenes/imagenes_agua/carrucel 4.jpg" class="d-block w-100" alt="Naturaleza">
-        <div class="carousel-caption d-none d-md-block">
-        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -55,26 +66,40 @@
     </button>
   </div>
 
-  <div class="redes-sociales">
-  <a href="https://www.instagram.com/drop.by.drop_oficial/" target="_blank" class="btn-icon instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/people/Drop-Bydrop/pfbid02u5hNoHVgptkd977icM6zMSybTiBmSvwnSyQuAfPiHic2pVPaYWjvpufKnRR8Uxa5l/" target="_blank" class="btn-icon facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://x.com/Dropbydr0p" target="_blank" class="btn-icon x">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-</div>
+  <!-- INFORMACIÓN -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">💧 ¿Qué es el riego por goteo?</h2>
+    <p>
+      El riego por goteo, también conocido como sistema “gota a gota”, es un método de irrigación que
+      suministra agua directamente a la base de las plantas a través de pequeños orificios o goteros.
+      Su objetivo principal es aprovechar al máximo el recurso hídrico, evitando pérdidas por evaporación 
+      o escurrimiento superficial.
+    </p>
+    <p>
+      Este tipo de riego se ha convertido en una herramienta clave para enfrentar la crisis del agua,
+      ya que permite producir alimentos de manera más sostenible, eficiente y responsable con el medio ambiente.
+    </p>
+  </section>
 
+  <!-- CONSEJOS -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">💡 Consejos para usar el riego por goteo</h2>
+    <p>
+      Para aprovechar al máximo un sistema de riego por goteo, es recomendable instalar filtros que eviten obstrucciones,
+      revisar periódicamente las conexiones para detectar fugas y usar programadores automáticos que regulen los horarios
+      de riego. En huertas caseras, se puede empezar con kits básicos y de bajo costo, mientras que en la agricultura a gran
+      escala es ideal combinar este sistema con fertilizantes líquidos para mejorar la nutrición de los cultivos.
+    </p>
+  </section>
 
-  <section class="section bg-primary text-white">
+  <!-- FRASE -->
+  <section class="section bg-primary text-white text-center p-5">
     <h2>Únete al cambio</h2>
-    <p>Ayuda a conservar el agua. ¡Cada gota importa!</p>
+    <p>El agua es vida. ¡Cada gota cuenta para el futuro de todos!</p>
     <a href="/pages/Contactos.html" class="btn btn-light mt-3">Contáctanos</a>
   </section>
 
-  <section class="public-reviews" id="reseñas">
+   <section class="public-reviews" id="reseñas">
   <div class="container">
     <h2 class="reviews-title">Opiniones de nuestros usuarios</h2>
     <p class="reviews-subtitle">Conoce lo que piensan quienes ya usan Drop by Drop</p>
@@ -108,28 +133,51 @@
   </div>
 </section>
 
+  <!-- FOOTER -->
+  <footer id="contacto" class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        
+        <!-- Columna izquierda -->
+        <div class="col-md-4 mb-3">
+          <h5><i class="fas fa-phone"></i> Contacto</h5>
+          <p>Teléfono: <strong>515 82 98</strong></p>
+          <p>WhatsApp: <strong>+57 311 442 42 12</strong></p>
+        </div>
+        
+        <!-- Columna centro -->
+        <div class="col-md-4 mb-3">
+          <h5><i class="fas fa-map-marker-alt"></i> Nuestras Oficinas</h5>
+          <p>Oficina Principal: <br> Cra 52 #65-69</p>
+          <p>Oficina Secundaria: <br> Cl 42 #77-56</p>
+        </div>
+         
+        <!-- Columna derecha -->
+        <div class="col-md-4 mb-3 text-center">
+          <h5><i class="fas fa-droplet"></i> Drop by Drop</h5>
+          <p>© 2025 Drop by Drop <br> Todos los derechos reservados.</p>
+          <!-- Redes Sociales -->
+          <div class="mt-3">
+            <a href="https://www.instagram.com/drop.by.drop_oficial/" target="_blank" class="social-btn instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Drop-Bydrop/pfbid02u5hNoHVgptkd977icM6zMSybTiBmSvwnSyQuAfPiHic2pVPaYWjvpufKnRR8Uxa5l/" target="_blank" class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/Dropbydr0p" target="_blank" class="social-btn x">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+ 
 
 
 
 
-  <footer id="contacto" class="footer">
-    <div class ="d-flex container justify-content-space-around align-items-center">
-      <div class="footer-izquierda">
-        <p>Telefono: 515 82 98 </p>
-        <p>WhatsApp: +57 311 442 42 12</p>
-        <copyright>© 2023 Drop by Drop. Todos los derechos reservados.</copyright>
-      </div>
-      <div class="footer-derecha">
-        <p>Oficina principal: Cra 52 #65-69</p>
-        <p>Oficina secundaria: Cl 42 #77-56</p>
-      </div>
-    </div>
-      
-</footer>
 
-  
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/javascript/index.js"></script>
 </body>
 </html>
-
