@@ -1,70 +1,115 @@
-.h4 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
+/* Tipografía y base */
+body {
+  background-color: #181a1b;
+  font-family: 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in-out;
 }
-.text-white{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-}.mi-encabezado {
+
+/* Animación general de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Encabezado */
+.mi-encabezado {
   background-color: #1e1e2f;
+  animation: slideDown 0.8s ease;
 }
-body{
-    background-color:#181a1b;
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
 }
+
+.mi-encabezado a {
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.mi-encabezado a:hover {
+  color: #4da3ff;
+  transform: scale(1.05);
+}
+
+/* Título */
 .opiniones {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    color: #ffff;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 30px 0;
+  animation: fadeUp 1s ease;
 }
-/* Apartado de opiniones*/  
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Formulario */
 .formulario-opinion {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 30px;
+  background: linear-gradient(145deg, #20222d, #181a1b);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 40px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeUp 1.2s ease forwards;
 }
 
 .formulario-opinion label {
   font-weight: bold;
-  padding: 20px 0px 0px;
-
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
+.formulario-opinion label:nth-child(1) { animation-delay: 0.3s; }
+.formulario-opinion label:nth-child(3) { animation-delay: 0.6s; }
+.formulario-opinion label:nth-child(5) { animation-delay: 0.9s; }
 
 .formulario-opinion input,
 .formulario-opinion textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
   font-size: 1em;
   width: 100%;
   background-color: #2e2e2e;
   color: white;
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.formulario-opinion input:focus,
+.formulario-opinion textarea:focus {
+  border-color: #4da3ff;
+  background-color: #333544;
+  outline: none;
+  transform: scale(1.02);
 }
 
+/* Botón */
 .formulario-opinion button {
-  background-color: #1e1e2f;
+  background: linear-gradient(90deg, #007bff, #0056d6);
   color: white;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 5px;
-  font-size: 1em;
+  border-radius: 8px;
+  font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
-
 .formulario-opinion button:hover {
-  background-color: #27273d;
+  transform: translateY(-3px) scale(1.03);
+  opacity: 0.95;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
 }
 
-
-/*Aca finaliza*/
-
-
+/* Footer */
+footer {
+  animation: fadeIn 1.5s ease;
+}
